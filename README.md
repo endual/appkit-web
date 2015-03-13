@@ -1,2 +1,2 @@
 # appkit-web
-spring mvc freemarker
+spring 4 mvc + freemarker
