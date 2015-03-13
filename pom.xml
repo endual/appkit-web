@@ -11,6 +11,8 @@
 
     <properties>
         <spring.version>4.1.1.RELEASE</spring.version>
+        <freemarker.version>2.3.20</freemarker.version>
+        <junit.version>3.8.1</junit.version>
     </properties>
 
   <dependencies>
@@ -44,10 +46,23 @@
           <version>3.2</version>
       </dependency>
 
+      <!-- freemarker视图-->
+      <dependency>
+          <groupId>org.freemarker</groupId>
+          <artifactId>freemarker</artifactId>
+          <version>${freemarker.version}</version>
+      </dependency>
+
       <!-- 添加 Spring 的架构-->
       <dependency>
           <groupId>org.springframework</groupId>
           <artifactId>spring-context</artifactId>
+          <version>${spring.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context-support</artifactId>
           <version>${spring.version}</version>
       </dependency>
 
@@ -84,7 +99,7 @@
       <dependency>
           <groupId>junit</groupId>
           <artifactId>junit</artifactId>
-          <version>3.8.1</version>
+          <version>${junit.version}</version>
           <scope>test</scope>
       </dependency>
 
