@@ -1,6 +1,6 @@
 <div id="header">
     <h2>
-        <a href="http://viralpatel.net"><img height="37" width="236" border="0px" src="/resources/image/favicon.ico" align="left"></a>
+        <a href="http://viralpatel.net"><img height="37" width="37" border="0px" src="http://www.popkit.org/favicon/favicon.ico" align="left"></a>
         FreeMarker Spring 4 MVC Hello World
     </h2>
 </div>
