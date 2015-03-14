@@ -10,7 +10,7 @@
     <context:annotation-config/>
     <context:component-scan base-package="org.popkit.appkit" />
 
-    <!-- 这里是 jsp视图-->
+    <!-- use jsp as view-->
     <!--
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -21,7 +21,7 @@
     </bean>
     -->
 
-    <!-- freemarker的配置 -->
+    <!-- use freemarker as view template -->
     <bean id="freemarkerConfigurer"
           class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath" value="/WEB-INF/pages/" />
@@ -37,7 +37,7 @@
         </property>
     </bean>
 
-    <!-- 下面解释为freemarker视图 -->
+    <!-- use freemarker as view -->
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
         <property name="viewClass"
