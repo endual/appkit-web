@@ -46,6 +46,13 @@
           <version>3.2</version>
       </dependency>
 
+      <!-- ibatis jar config-->
+      <dependency>
+          <groupId>c3p0</groupId>
+          <artifactId>c3p0</artifactId>
+          <version>0.9.1.2</version>
+      </dependency>
+
       <!-- freemarker视图-->
       <dependency>
           <groupId>org.freemarker</groupId>

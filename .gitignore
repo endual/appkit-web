@@ -8,3 +8,4 @@ out/
 *.iml
 #.gitignore
 *~
+src/main/resources/config/spring/appcontext-ibatis-db.xml
