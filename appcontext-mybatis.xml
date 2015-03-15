@@ -16,17 +16,21 @@
     <context:component-scan base-package="org.popkit.appkit"/>
 
     <!-- middleware datasource  -->
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"
-          p:driverClassName="com.mysql.jdbc.Driver" p:url="jdbc:mysql://bdm-011.hichina.com/bdm0110384_db"
-          p:username="bdm0110384" p:password="xx34416912"
-          p:initialSize="2"
-          p:maxActive="30"
-          p:maxIdle="10"
-          p:minIdle="3"
-          p:maxWait="30000"
-          p:removeAbandoned="true"
-          p:removeAbandonedTimeout="30"
-          p:validationQuery="SELECT 1" />
+    <!-- middleware datasource  -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://bdm-011.hichina.com/bdm0110384_db"/>
+        <property name="username" value="bdm0110384" />
+        <property name="password" value="xx34416912"/>
+        <property name="initialSize" value="2" />
+        <property name="maxActive" value="30" />
+        <property name="maxIdle" value="10" />
+        <property name="minIdle" value="3" />
+        <property name="maxWait" value="30000" />
+        <property name="removeAbandoned" value="true" />
+        <property name="removeAbandonedTimeout" value="30" />
+        <property name="validationQuery" value="SELECT 1" />
+    </bean>
 
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
