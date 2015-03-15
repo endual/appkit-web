@@ -6,10 +6,17 @@ package org.popkit.appkit.entity;
  * @time 10:04 AM
  */
 public class User {
+    private int id;
     private String firstname;
     private String lastname;
 
     public User() {
+    }
+
+    public User(BasicDo basicDo) {
+        this.id = basicDo.getId();
+        this.firstname = basicDo.getName();
+        this.lastname = basicDo.getAddress();
     }
 
     public User(String firstname, String lastname) {
@@ -32,5 +39,13 @@ public class User {
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

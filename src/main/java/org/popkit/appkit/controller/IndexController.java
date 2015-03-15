@@ -1,6 +1,10 @@
 package org.popkit.appkit.controller;
 
+import org.apache.commons.collections.CollectionUtils;
+import org.popkit.appkit.entity.BasicDo;
 import org.popkit.appkit.entity.User;
+import org.popkit.appkit.service.DemoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -17,6 +21,9 @@ import java.util.List;
  */
 @Controller
 public class IndexController {
+    @Autowired
+    private DemoService demoService;
+
     /**
      * Static list of users to simulate Database
      */
@@ -24,11 +31,7 @@ public class IndexController {
 
     //Initialize the list with some data for index screen
     static {
-        userList.add(new User("Bill", "Gates"));
-        userList.add(new User("Steve", "Jobs"));
-        userList.add(new User("Larry", "Page"));
-        userList.add(new User("Sergey", "Brin"));
-        userList.add(new User("Larry", "Ellison"));
+        userList.add(new User("用户名", "地址"));
     }
 
     /**
@@ -40,7 +43,17 @@ public class IndexController {
      */
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(@ModelAttribute("model") ModelMap model) {
-        model.addAttribute("userList", userList);
+        List<BasicDo> allValues = demoService.queryAllUsersInfo();
+        List<User> userListInfo = new ArrayList<User>();
+
+        if (CollectionUtils.isNotEmpty(allValues)) {
+            int index = 0;
+            for (BasicDo item : allValues) {
+                userListInfo.add(new User(item));
+            }
+        }
+
+        model.addAttribute("userList", userListInfo);
         return "index";
     }
 
@@ -57,6 +70,7 @@ public class IndexController {
         if (null != user && null != user.getFirstname()
                 && null != user.getLastname() && !user.getFirstname().isEmpty()
                 && !user.getLastname().isEmpty()) {
+            demoService.insert(user.getFirstname(), user.getLastname());
             synchronized (userList) {
                 userList.add(user);
             }

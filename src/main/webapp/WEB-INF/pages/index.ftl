@@ -18,15 +18,20 @@
     </fieldset>
     <br>
 
-<#list model["userList"] as user>
     <table class="datatable">
-        <tbody><tr>
+        <tbody>
+        <tr>
             <th>Firstname</th>  <th>Lastname</th>
-        </tr><tr>
-            <td>${user.firstname}</td> <td>${user.lastname}</td>
         </tr>
+        <#list model["userList"] as user>
+        <tr>
+            <td>${user.id}</td>
+            <td>${user.firstname}</td>
+            <td>${user.lastname}</td>
+        </tr>
+        </#list>
+
         <!--#list-->
         </tbody></table>
-</#list>
 
 </div>

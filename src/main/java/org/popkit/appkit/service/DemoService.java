@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -27,6 +28,10 @@ public class DemoService {
 
     public void insert(String name, String address) {
         demoMapper.insert(new BasicDo(name, address));
+    }
+
+    public List<BasicDo> queryAllUsersInfo() {
+        return demoMapper.listAllUsersInfo();
     }
 
 }

@@ -10,6 +10,9 @@ public class BasicDo {
     private String name;
     private String address;
 
+    public BasicDo() {
+    }
+
     public Integer getId() {
         return id;
     }
