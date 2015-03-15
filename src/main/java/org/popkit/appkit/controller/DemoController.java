@@ -35,6 +35,7 @@ public class DemoController {
         }
 
         modelMap.addAttribute("info", info);
+        modelMap.addAttribute("pageTitle", "示例页面");
         modelMap.addAttribute("class", this.getClass().toString());
         return "demo";
     }

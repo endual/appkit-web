@@ -22,6 +22,7 @@
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>/resources/*</url-pattern>
+        <url-pattern>/bootstrap/*</url-pattern>
     </servlet-mapping>
 
     <servlet>
