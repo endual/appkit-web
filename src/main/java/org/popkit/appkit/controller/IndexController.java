@@ -55,7 +55,7 @@ public class IndexController {
 
         model.addAttribute("userList", userListInfo);
         model.addAttribute("pageTitle", "示例页面");
-        return "index";
+        return "/ftl/index";
     }
 
     /**
