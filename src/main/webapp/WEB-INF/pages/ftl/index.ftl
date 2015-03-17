@@ -48,18 +48,22 @@
             <div class="container">
                 <div class="carousel-caption">
                     <h1>有什么可以帮助到您？</h1>
-                    <p>我们提供服务有(不限于)：为小微企业提供技术</p>
+                    <p>我们提供服务有(不限于)：为小微企业提供软件解决方案，技术咨询服务。其中有网站的建设、维护、API开发等。</p>
+                    <!--
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    -->
                 </div>
             </div>
         </div>
         <div class="item">
-            <img src="/resources/image/ladder.jpg" alt="Second slide">
+            <img src="/resources/image/balloonrect.jpg" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h1>我们专注于哪些技术？</h1>
+                    <p>JavaEE、SpringMVC、Freemarker、Mybatis、MySQL、Bootstrap、Html5、Linux等技术。</p>
+                    <!--
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    -->
                 </div>
             </div>
         </div>
@@ -67,9 +71,11 @@
             <img src="/resources/image/cloudme.jpg" alt="Third slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <h1>我们的贡献有哪些？</h1>
+                    <p>我们的大部分代码都开源，为开源社区做贡献！其中涉及许多工具代码等。</p>
+                    <!--
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    -->
                 </div>
             </div>
         </div>
@@ -94,20 +100,21 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
+            <img class="img-circle" src="/resources/image/service.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>服务</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
+            <img class="img-circle" src="/resources/image/toolsicon.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>工具</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
+            <!-- src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" -->
+            <img class="img-circle" src="/resources/image/techicon.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>技术</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
@@ -124,7 +131,8 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"
+                    src="/resources/image/smilegirl.jpg">
         </div>
     </div>
 
@@ -132,7 +140,8 @@
 
     <div class="row featurette">
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"
+                 src="/resources/image/tools.png">
         </div>
         <div class="col-md-7">
             <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
@@ -148,7 +157,8 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image"
+                    src="/resources/image/tech.jpg">
         </div>
     </div>
 
